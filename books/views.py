@@ -36,3 +36,5 @@ def delete_book(request, pk):
         return redirect('book_list')
     return render(request, 'books/book_confirm_delete.html', {'book': book})
     
+def index(request):
+    return render(request, 'index.html')
